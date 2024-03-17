@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<du>, initial-scale=1.0">
+    <title>SIGN UP</title>
+</head>
+<body>
+    <div style = "width:1000px; margin:0 auto;">
+        <div style="width:1000px; background-color: blue; height: 50px; color: white; font-size: 30px;">
+            Create an account.
+        </div>
+        <h3 style="text-align: center;"><%=errmsg%></h3>
+        <form action = "/reg_submit" method = "post">
+            <table align = "center" width = "600" border = "2">
+                <tr>
+                    <td>Enter First Name</td>
+                    <td><input type = "text" name = "fname"/></td>
+                </tr>
+                <tr>
+                    <td>Enter Middle Name</td>
+                    <td><input type = "text" name = "mname"/></td>
+                </tr>
+                <tr>
+                    <td>Enter Last Name</td>
+                    <td><input type = "text" name = "lname"/></td>
+                </tr>
+                <tr>
+                    <td>Enter Email or mobile number</td>
+                    <td><input type = "text" name = "email"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type = "password" name = "pass"/></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type = "password" name = "cpass"/></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type = "date" name = "dob"/></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male"/>
+
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female"/>
+
+                        <label for="dnd">Don't want to Disclose !</label>
+                        <input type="radio" id="dnd" name="gender" value="dnd"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type = "text" name = "username"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type = "submit" name = "signin" value="Register"/></td>
+                </tr>
+            </table>
+            <div style="text-align: center;">
+                <a href="/login">Already have an Account ! click to login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

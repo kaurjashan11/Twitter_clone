@@ -1,0 +1,33 @@
+<html>
+<body>
+    <div style = "width:1000px; margin:0 auto;">
+        <div style="width:1000px; background-color: blue; height: 50px; color: white; font-size: 30px;">
+            Edit profile
+        </div>
+        <h3 style="text-align: center;"><%=msg%></h3>
+        <form action = "/edit_profile_submit" method = "post">
+            <table align = "center" width = "600" border = "2">
+                <tr>
+                    <td>Enter First Name</td>
+                    <td><input type = "text" name = "fname" value="<%=result[0].fname%>"/></td>
+                </tr>
+                <tr>
+                    <td>Enter Middle Name</td>
+                    <td><input type = "text" name = "mname" value="<%=result[0].mname%>"/></td>
+                </tr>
+                <tr>
+                    <td>Enter Last Name</td>
+                    <td><input type = "text" name = "lname" value="<%=result[0].lname%>"/></td>
+                </tr>
+                <tr>
+                    <td>Say something about yourself</td>
+                    <td><textarea name="about" value="<%=result[0].about%>"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type = "submit" name = "signin" value="update"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

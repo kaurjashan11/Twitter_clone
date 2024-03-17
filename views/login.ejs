@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<du>, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div style = "width:1000px; margin:0 auto;">
+        <div style="width:1000px; background-color: blue; height: 50px; color: white; font-size: 30px;">
+            Login Twitter
+        </div>
+        <h3><%=msg%></h3>
+        <form action = "/login_submit" method = "post">
+            <table align = "center" width = "500" border = "2">
+                <tr>
+                    <td>Enter Email or mobile number</td>
+                    <td><input type = "text" name = "email"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type = "text" name = "pass"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type = "submit" name = "Login" value="login"/></td>
+                </tr>
+            </table>
+            <div style="text-align: center;">
+                <a href="/signup">Don't have an account, pls click to Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
